@@ -35,13 +35,13 @@ FE.init = function() {
     });
 
     // serviceWorker check
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').then(function(registration) {
-            console.log('Service worker registration successful');
-        }).catch(function(err) {
-            console.error('Service worker registration failed', err);
-        });
-    }
+    // if ('serviceWorker' in navigator) {
+    //     navigator.serviceWorker.register('sw.js').then(function(registration) {
+    //         console.log('Service worker registration successful');
+    //     }).catch(function(err) {
+    //         console.error('Service worker registration failed', err);
+    //     });
+    // }
 
     console.info('FE initialized');
 
