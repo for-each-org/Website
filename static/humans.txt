@@ -1,6 +1,0 @@
-Hand-crafted with love by ForEach
-
-* * *
-
-@for-each
-hello@for-each.org
