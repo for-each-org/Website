@@ -26,38 +26,37 @@ main {
 
 .masthead {
   display: grid;
-  grid-template-columns: repeat(16, 1fr); }
+  grid-template-columns: 50vw auto 300px auto; }
 
 .fill {
+  background: #222;
+  margin: 10px;
   height: 300px;
   display: inline-block; }
 
 .name {
-  background: #222;
-  grid-column: 1 / span 16; }
+  grid-column: 1 / span 4; }
 
 .ideals {
-  background: #123456;
-  grid-column: 1 / span 16; }
+  grid-column: 1 / span 4; }
 
 .join-us {
-  background: #654321;
-  grid-column: 1 / span 16; }
+  grid-column: 1 / span 4; }
 
 @media (min-width: 800px) {
   .masthead {
     grid-template-rows: auto auto; }
 
   .name {
-    grid-column: 1 / 6;
+    grid-column: 1 / 2;
     grid-row: 1 / 2; }
 
   .ideals {
-    grid-column: 1 / 8;
+    grid-column: 1 / 2;
     grid-row: 2 / 3; }
 
   .join-us {
-    grid-column: 10 / 15;
+    grid-column: 3 / 4;
     grid-row: 1 / 2; } }
 
 /*# sourceMappingURL=main.css.map */
