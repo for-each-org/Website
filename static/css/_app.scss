@@ -12,8 +12,43 @@ main {
 
 .masthead {
     display: grid;
-    grid-template-areas:
-        "Name",
-        "Ideals",
-        "Join";
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.fill {
+    height: 300px;
+    display: inline-block;
+}
+
+.name {
+    background: $dark;
+    grid-column: 1 / span 16;
+}
+
+.ideals {
+    background: $primary;
+    grid-column: 1 / span 16;
+}
+
+.join-us {
+    background: $secondary;
+    grid-column: 1 / span 16;
+}
+
+@media (min-width: 800px) { 
+    .masthead {
+        grid-template-rows: auto auto;
+    }
+    .name {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+    }
+    .ideals {
+        grid-column: 1 / 8;
+        grid-row: 2 / 3;
+    }
+    .join-us {
+        grid-column: 10 / 15;
+        grid-row: 1 / 2;
+    }
 }
