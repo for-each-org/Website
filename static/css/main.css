@@ -29,37 +29,34 @@ main {
   width: 100vw;
   display: grid;
   grid-template-columns: 50vw auto 300px auto;
-  grid-gap: unset;
+  grid-gap: 0px;
 }
 
 .fill {
-  background: #222;
-  height: 300px;
+  margin: 0;
+  height: 100%;
   display: inline-block; 
 }
 
 .name, .ideals, .join-us {
   grid-column-start: 1;
   grid-column-end: -1;
+  grid-gap: 0;
 }
 
 .name {
-  margin-top: 0;
+  background: #ccc;
 }
 
 .ideals {
-  margin-top: 10px;
+  background: #555;
 }
 
 .join-us {
-  margin-top: 10px;
+  background: #222;
 }
 
 @media (min-width: 800px) {
-  .masthead {
-    grid-template-rows: auto auto; 
-  }
-  
   .name, .ideals, .join-us {
     margin-top: 0;
   }
