@@ -35,6 +35,20 @@ main {
     grid-column: 1 / span 4;
 }
 
+.for {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+}
+
+.for-item {
+    align-self: stretch;
+    height: 200px;
+    background: #555;
+    margin: 5px;
+}
+
 @media (min-width: 800px) { 
     .masthead {
         grid-template-rows: auto auto;
@@ -50,5 +64,12 @@ main {
     .join-us {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
+    }
+    .for {
+        flex-direction: row;
+    }
+    .for-item {
+        align-self: center;
+        width: 300px;
     }
 }
