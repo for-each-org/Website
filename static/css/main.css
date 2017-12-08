@@ -45,15 +45,15 @@ main {
 
 .for {
   display: flex;
-  justify-content: center;
-  align-content: stretch;
+  justify-content: stretch;
   flex-direction: column; }
 
 .for-item {
   align-self: stretch;
-  height: 200px;
-  background: #555;
-  margin: 5px; }
+  margin: 5px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 3px; }
 
 @media (min-width: 800px) {
   .masthead {
@@ -72,10 +72,10 @@ main {
     grid-row: 1 / 2; }
 
   .for {
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: center; }
 
   .for-item {
-    align-self: center;
     width: 300px; } }
 
 /*# sourceMappingURL=main.css.map */
