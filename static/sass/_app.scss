@@ -81,7 +81,6 @@ main {
         font-size: 1.4rem;
         background-color: $orange;
         padding: 2rem;
-        margin-right: 2rem;
     }
 
     h2 {
@@ -112,11 +111,6 @@ main {
         margin: 0;
         border: .3rem grey;
         padding: 1rem;
-
-        &:focus{
-            
-            outline: fuchsia
-        }
     }
 }
 
@@ -130,16 +124,16 @@ main {
     align-self: stretch;
     margin: 0.5rem;
     background: $white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
 
     &-heading {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
 
     &-text {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -158,6 +152,9 @@ main {
     .join-us {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
+        &-container {
+            margin-right: 2rem;
+        }
     }
     .for {
         flex-direction: row;

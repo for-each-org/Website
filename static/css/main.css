@@ -69,8 +69,7 @@ main {
   .join-us-container {
     font-size: 1.4rem;
     background-color: #f9b54d;
-    padding: 2rem;
-    margin-right: 2rem; }
+    padding: 2rem; }
   .join-us h2 {
     font-size: 3rem;
     margin-bottom: .7rem;
@@ -90,8 +89,6 @@ main {
     margin: 0;
     border: .3rem grey;
     padding: 1rem; }
-    .join-us input:focus, .join-us select:focus {
-      outline: fuchsia; }
 
 .for {
   display: flex;
@@ -102,13 +99,13 @@ main {
   align-self: stretch;
   margin: 0.5rem;
   background: #ffffff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 3px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); }
   .for-item-heading {
-    font-size: 2.4rem; }
+    font-size: 3rem; }
   .for-item-text {
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
 
 @media (min-width: 800px) {
   .masthead {
@@ -122,6 +119,8 @@ main {
   .join-us {
     grid-column: 3 / 4;
     grid-row: 1 / 2; }
+    .join-us-container {
+      margin-right: 2rem; }
   .for {
     flex-direction: row;
     justify-content: center; }
