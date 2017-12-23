@@ -12,6 +12,8 @@
   <meta name="theme-color" content="#65C6B9">
   <link rel="manifest" href="/manifest.json">
   <!-- TODO Google Fonts go here -->
+  <!-- TODO make sure to remove fonts and weights we're not using -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,600,700,800" rel="stylesheet">
 
   <meta name="description" content="We connect students with nonprofit causes worth working for.">
   <meta name="robots" content="index,follow,noodp">
@@ -65,32 +67,47 @@
   <main>
 
     <div class="masthead">
-      <div class="name fill"></div>
-      <div class="ideals fill"></div>
-      <div class="join-us fill">
+      <!-- TODO -->
+      
+      <div class="name">
+        <img class="name-logo" src="/assets/logo.png"/>
+        <h1 class="name-header">
+          <span class="name-header-name">For-</span>
+          <span class="name-header-name">Each</span>
+          <span class="name-header-sub">Cause.</span>
+        </h1>
+        
+      </div>
+      <div class="ideals">
+          <h2 class="ideals-text">
+              We help students gain real-world experience and help nonprofits further their mission by connecting students to causes worth working for.
+          </h2>
+      </div>
+      <div class="join-us">
         <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
+        <div id="mc_embed_signup" class="join-us-container">
+          <h2>Join us.</h2>
+          <p>We just want a to keep you in the loop when we find new opportunities for you to get involved in our mission.</p>
           <form action="https://facebook.us17.list-manage.com/subscribe/post?u=a2c2d87603fe3bdbf03e1935c&amp;id=6389bf8c44" method="post"
             id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-              <h2>Join us.</h2>
-              <p>We just want a to keep you in the loop when we find new opportunities for you to get involved in our mission.</p>
+              
               <div class="mc-field-group">
-                <label for="mce-EMAIL">Email AddresS</label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <!-- <label for="mce-EMAIL">Email Address</label> -->
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
               </div>
               <div class="mc-field-group">
-                <label for="mce-FNAME">First Name </label>
-                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                <!-- <label for="mce-FNAME">First Name </label> -->
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
               </div>
               <div class="mc-field-group">
-                <label for="mce-LNAME">Last Name </label>
-                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                <!-- <label for="mce-LNAME">Last Name </label> -->
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
               </div>
               <div class="mc-field-group">
-                <label for="mce-group[3137]">Affiliation </label>
+                <!-- <label for="mce-group[3137]">Affiliation</label> -->
                 <select name="group[3137]" class="REQ_CSS" id="mce-group[3137]">
-                  <option value=""></option>
+                  <option value="">Who are you?</option>
                   <option value="1">I'm a student.</option>
                   <option value="2">I represent a nonprofit.</option>
                   <option value="4">I want updates on ForEach.</option>
@@ -118,27 +135,27 @@
 
     <div class="for">
       <div class="for-item">
-        <h1>For Students</h1>
-        <p>
+        <h1 class="for-item-heading">For Students</h1>
+        <p class="for-item-text">
           Internships at start-ups and standard volunteer gigs aren't the only ways to gain experience while having a meaningful impact
           on the world.
         </p>
-        <p>
+        <p class="for-item-text">
           We started ForEach because we believe hat working in small teams for causes you care about helps you become more than just
           a programmer or a designer.
         </p>
-        <p>
+        <p class="for-item-text">
           From year 1, we want to help you make cool stuff that helps make the world suck less, and help you gain industry experience
           that counts.
         </p>
       </div>
       <div class="for-item">
-        <h1>For Non-Profits</h1>
-        <p>
+        <h1 class="for-item-heading">For Non-Profits</h1>
+        <p class="for-item-text">
           Running a not-for-profit organization means that you need to make every dollar count, and make sure every fraction of you
           effort reaches the most number of people and every hour you spend makes the most difference.
         </p>
-        <p>
+        <p class="for-item-text">
           We think there's a way to have a killer website, memorable online presence, or the best design on the block while staying
           true to those goals.
         </p>
