@@ -197,6 +197,39 @@ h1, h2 {
     }
 }
 
+.footer {
+    background-color: $white;
+
+    &-container {
+        margin: 0 auto;
+        max-width: 1024px;
+        padding: 2rem;
+    }
+
+    &-info {
+        margin-bottom: 2rem;
+    }
+
+    &-text {
+        font-size: 1.5rem;
+    }
+
+}
+
+.btn-social {
+    display: inline-block;
+    font-size: 3rem;
+    background-color: #3B5998;
+    color: $white;
+    height: 4rem;
+    // width: 4rem; 
+    text-align: center;
+    border-radius: .3rem;
+    margin-right: 3rem;
+    padding: 0 .6rem;
+    text-decoration: none;
+}
+
 @media (min-width: 800px) {
     .masthead {
         grid-template-rows: auto auto;

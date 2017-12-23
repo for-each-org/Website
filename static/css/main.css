@@ -147,6 +147,29 @@ h1, h2 {
     font-size: 1.7rem;
     margin-bottom: 1.5rem; }
 
+.footer {
+  background-color: #ffffff; }
+  .footer-container {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 2rem; }
+  .footer-info {
+    margin-bottom: 2rem; }
+  .footer-text {
+    font-size: 1.5rem; }
+
+.btn-social {
+  display: inline-block;
+  font-size: 3rem;
+  background-color: #3B5998;
+  color: #ffffff;
+  height: 4rem;
+  text-align: center;
+  border-radius: .3rem;
+  margin-right: 3rem;
+  padding: 0 .6rem;
+  text-decoration: none; }
+
 @media (min-width: 800px) {
   .masthead {
     grid-template-rows: auto auto; }
