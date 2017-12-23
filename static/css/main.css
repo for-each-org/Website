@@ -27,6 +27,9 @@ main {
   width: 100vw;
   min-height: 100vh; }
 
+h1, h2 {
+  font-family: "Lato", sans-serif; }
+
 .masthead {
   display: grid;
   grid-template-columns: auto auto 30rem auto; }
@@ -46,7 +49,6 @@ main {
     display: block;
     margin-bottom: 2rem; }
   .name-header-name, .name-header-sub {
-    font-family: "Lato", sans-serif;
     display: block;
     font-size: 9rem;
     font-weight: 900;
@@ -81,31 +83,69 @@ main {
     text-align: center; }
   .join-us .clear {
     text-align: center; }
-  .join-us input, .join-us select {
+  .join-us input {
     display: inline-block;
     width: 100%;
     font-size: 1.6rem;
     border-radius: .1rem;
     margin: 0;
-    border: .3rem grey;
+    border: none;
     padding: 1rem; }
+  .join-us .button {
+    background-color: #ffffff;
+    color: #404040; }
+  .join-us select {
+    font-size: 1.6rem;
+    width: 100%;
+    font-size: 1.6rem; }
 
 .for {
   display: flex;
   justify-content: stretch;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 2rem; }
+  .for-item {
+    align-self: stretch;
+    margin: 0.5rem;
+    background: #ffffff;
+    padding: 2rem 2rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); }
+    .for-item-heading {
+      font-size: 3rem;
+      margin-bottom: .7rem; }
+    .for-item-text {
+      font-size: 1.7rem; }
 
-.for-item {
-  align-self: stretch;
-  margin: 0.5rem;
-  background: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 3px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); }
-  .for-item-heading {
-    font-size: 3rem; }
-  .for-item-text {
-    font-size: 1.8rem; }
+.important {
+  padding: 2rem; }
+  .important-heading {
+    font-size: 3rem;
+    margin-bottom: .7rem; }
+  .important-text {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem; }
+
+.cta {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto; }
+  .cta-box {
+    padding: 2rem;
+    color: #ffffff;
+    height: 300px; }
+  .cta-left {
+    grid-column: 1 / span 2;
+    background-color: #65c6b9; }
+  .cta-right {
+    grid-column: 1 / span 2;
+    background-color: #c13a2c; }
+  .cta-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+  .cta-text {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem; }
 
 @media (min-width: 800px) {
   .masthead {
@@ -125,6 +165,10 @@ main {
     flex-direction: row;
     justify-content: center; }
   .for-item {
-    width: 300px; } }
+    width: 35rem; }
+  .cta-left {
+    grid-column: 1 / 2; }
+  .cta-right {
+    grid-column: 2 / 3; } }
 
 /*# sourceMappingURL=main.css.map */
