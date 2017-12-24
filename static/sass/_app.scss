@@ -205,11 +205,6 @@ h1, h2 {
         font-size: 1.7rem;
         margin-bottom: 1.5rem;
     }
-
-    // for full screen background in laptops
-    @media screen and (min-width: $tablet) {
-        
-    }
 }
 
 .footer {
@@ -245,7 +240,7 @@ h1, h2 {
     text-decoration: none;
 }
 
-@media (min-width: $tablet) {
+@media #{$tablet} {
     .masthead {
         grid-template-rows: auto auto;
     }
