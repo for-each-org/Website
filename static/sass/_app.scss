@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    max-width: $container-max-width;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     width: 100vw;
     min-height: 100vh;
@@ -173,7 +173,7 @@ h1, h2 {
     
     &-box {
         color: $white;
-        height: 300px; //todo
+        // height: 300px; //todo
     }
 
     &-left, &-right {
@@ -193,7 +193,7 @@ h1, h2 {
     }
 
     &-text-wrapper {
-        max-width: calc(#{$container-max-width} / 2);
+        max-width: calc(var(--container-max-width) / 2);
         padding: 2rem;
     }
 
@@ -208,8 +208,8 @@ h1, h2 {
     }
 
     // for full screen background in laptops
-    @media screen and (min-width: $container-max-width) {
-        margin-left: calc(-100vw / 2 + #{$container-max-width} / 2);
+    @media screen and (min-width: $tablet) {
+        margin-left: calc(-100vw / 2 + var(--container-max-width) / 2);
 
         &-left {
             justify-content: flex-end;
@@ -222,7 +222,7 @@ h1, h2 {
 
     &-container {
         margin: 0 auto;
-        max-width: 1024px;
+        max-width: var(--container-max-width);
         padding: 2rem;
     }
 
@@ -250,7 +250,7 @@ h1, h2 {
     text-decoration: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: $tablet) {
     .masthead {
         grid-template-rows: auto auto;
     }
