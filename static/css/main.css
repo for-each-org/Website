@@ -130,24 +130,34 @@ h1, h2 {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
-  width: 100vw;
-  margin-left: calc(-100vw / 2 + 1024px / 2); }
+  width: 100vw; }
   .cta-box {
-    padding: 2rem;
     color: #ffffff;
     height: 300px; }
+  .cta-left, .cta-right {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start; }
   .cta-left {
     grid-column: 1 / span 2;
     background-color: #65c6b9; }
   .cta-right {
     grid-column: 1 / span 2;
     background-color: #c13a2c; }
+  .cta-text-wrapper {
+    max-width: calc(1024px / 2);
+    padding: 2rem; }
   .cta-heading {
     font-size: 3rem;
     margin-bottom: 1rem; }
   .cta-text {
     font-size: 1.7rem;
     margin-bottom: 1.5rem; }
+  @media screen and (min-width: 1024px) {
+    .cta {
+      margin-left: calc(-100vw / 2 + 1024px / 2); }
+      .cta-left {
+        justify-content: flex-end; } }
 
 .footer {
   background-color: #ffffff; }
