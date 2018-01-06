@@ -51,6 +51,21 @@ h1, h2 {
     
             &-sub {
                 color: $green;
+
+                &-0 {
+                    color: $green;
+                    animation: moveInLeft 1s ease-out;
+                }
+    
+                &-1 {
+                    color: $red;
+                    animation: moveInLeft 1s ease-out;
+                }
+    
+                &-2 {
+                    color: $orange;
+                    animation: moveInLeft 1s ease-out;
+                }
             }
         }
     }
@@ -147,6 +162,10 @@ h1, h2 {
     
         &-text {
             font-size: 1.7rem;
+        }
+
+        &-sub {
+            color: $green;
         }
     }
 }
