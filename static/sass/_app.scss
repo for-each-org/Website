@@ -11,10 +11,10 @@ body {
 }
 
 main {
-    max-width: var(--container-max-width);
     margin: 0 auto;
     width: 100vw;
     min-height: 100vh;
+    max-width: var(--container-max-width);
 }
 
 h1, h2 {
@@ -235,6 +235,7 @@ h1, h2 {
 }
 
 @media #{$tablet} {
+
     .masthead {
         grid-template-rows: auto auto;
 
