@@ -67,13 +67,13 @@ h1, h2 {
       color: #65c6b9; }
       .masthead-name-header-sub-0 {
         color: #65c6b9;
-        animation: moveInLeft 1s ease-out; }
+        animation: moveInLeft .7s ease-out; }
       .masthead-name-header-sub-1 {
         color: #c13a2c;
-        animation: moveInLeft 1s ease-out; }
+        animation: moveInLeft .7s ease-out; }
       .masthead-name-header-sub-2 {
         color: #f9b54d;
-        animation: moveInLeft 1s ease-out; }
+        animation: moveInLeft .7s ease-out; }
   .masthead-ideals {
     grid-column: 1 / span 4;
     padding: 2rem; }

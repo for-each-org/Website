@@ -6,7 +6,6 @@
 
     var tid = setInterval(rotate, 5000);
     function rotate() {
-        console.log(i);
         header.classList.remove("masthead-name-header-sub-" + (i - 1) % sayings.length);
         void header.offsetWidth; // makes the animation reset
         header.classList.add("masthead-name-header-sub-" + i % sayings.length);
