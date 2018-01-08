@@ -53,13 +53,20 @@ a:link:not(.btn) {
   background-color: #ffffff;
   color: #404040;
   font-size: 1.6rem;
+  border: 2px solid #ffffff;
   border-radius: .1rem;
   padding: 1rem 2rem;
   margin: 0;
-  border: none;
   text-decoration: none; }
   .btn-round {
     border-radius: 100rem; }
+  .btn:hover, .btn:focus {
+    background: #404040;
+    border-color: #404040;
+    color: #ffffff;
+    transition: all 0.2s ease-in; }
+  .btn:active {
+    border-color: #ffffff; }
 
 .masthead {
   display: grid;
