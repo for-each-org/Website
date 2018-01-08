@@ -74,11 +74,21 @@ a:link:not(.btn) {
   .masthead-name {
     padding: 2rem 2rem 0;
     grid-column: 1 / span 4;
-    max-width: 50rem; }
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start; }
     .masthead-name-logo {
-      height: 4rem;
+      height: 7rem;
       display: block;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      padding: 10px 20px;
+      background: #404040;
+      border-radius: 5px; }
+      .masthead-name-logo-img {
+        width: auto;
+        height: 100%; }
     .masthead-name-header-name, .masthead-name-header-sub {
       display: block;
       font-size: 9rem;

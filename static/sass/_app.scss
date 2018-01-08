@@ -36,7 +36,7 @@ a:link:not(.btn) {
 
     padding: 1rem 2rem;
     margin: 0;
-    
+
     text-decoration: none;
 
     &-round {
@@ -64,11 +64,24 @@ a:link:not(.btn) {
         padding: 2rem 2rem 0;
         grid-column: 1 / span 4;
         max-width: 50rem;
-    
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
         &-logo {
-            height: 4rem;
+            height: 7rem;
             display: block;
             margin-bottom: 2rem;
+            padding: 10px 20px;
+            background: $dark-grey;
+            border-radius: 5px;
+
+            &-img {
+                width: auto;
+                height: 100%;
+            }
         }
     
         &-header {
