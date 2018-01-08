@@ -17,11 +17,13 @@ main {
     max-width: var(--container-max-width);
 }
 
-h1, h2 {
+h1, 
+h2 {
     font-family: $font-family-headings;
 }
 
-a:link:not(.btn) {
+a:link:not(.btn),
+a:visited:not(.btn) {
     color: $blue
 }
 
@@ -43,7 +45,8 @@ a:link:not(.btn) {
         border-radius: 100rem;
     }
 
-    &:hover, &:focus {
+    &:hover, 
+    &:focus {
         background: $dark-grey;
         border-color: $dark-grey;
         color: $white;
@@ -86,7 +89,8 @@ a:link:not(.btn) {
     
         &-header {
 
-            &-name, &-sub {
+            &-name, 
+            &-sub {
                 display: block;
                 font-size: 9rem;
                 font-weight: 900;
@@ -253,7 +257,8 @@ a:link:not(.btn) {
         }
     }
 
-    &-left, &-right {
+    &-left, 
+    &-right {
         display: flex;
         align-items: stretch;
         justify-content: flex-start;
@@ -369,7 +374,8 @@ a:link:not(.btn) {
     justify-content: space-between;
     align-items: center;
 
-    &-left, &-right {
+    &-left, 
+    &-right {
         display: inline-block;
     }
 
