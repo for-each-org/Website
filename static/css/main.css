@@ -45,6 +45,22 @@ main {
 h1, h2 {
   font-family: "Lato", sans-serif; }
 
+a:link:not(.btn) {
+  color: #2aa2ea; }
+
+.btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #404040;
+  font-size: 1.6rem;
+  border-radius: .1rem;
+  padding: 1rem 2rem;
+  margin: 0;
+  border: none;
+  text-decoration: none; }
+  .btn-round {
+    border-radius: 100rem; }
+
 .masthead {
   display: grid;
   grid-template-columns: auto auto 30rem auto; }
@@ -72,7 +88,7 @@ h1, h2 {
         color: #c13a2c;
         animation: moveInLeft .7s ease-out; }
       .masthead-name-header-sub-2 {
-        color: #f9b54d;
+        color: #2aa2ea;
         animation: moveInLeft .7s ease-out; }
   .masthead-ideals {
     grid-column: 1 / span 4;
@@ -98,7 +114,7 @@ h1, h2 {
       text-align: center; }
     .masthead-join-us .clear {
       text-align: center; }
-    .masthead-join-us input {
+    .masthead-join-us-field {
       display: inline-block;
       width: 100%;
       font-size: 1.6rem;
@@ -106,9 +122,6 @@ h1, h2 {
       margin: 0;
       border: none;
       padding: 1rem; }
-    .masthead-join-us .button {
-      background-color: #ffffff;
-      color: #404040; }
     .masthead-join-us select {
       font-size: 1.6rem;
       width: 100%;
@@ -183,6 +196,10 @@ h1, h2 {
     padding: 2rem; }
     .footer-body-text {
       font-size: 1.5rem; }
+    .footer-body-link:link {
+      font-size: 1.5rem;
+      color: #2aa2ea;
+      text-decoration: none; }
 
 .btn-social {
   display: inline-block;

@@ -21,6 +21,26 @@ h1, h2 {
     font-family: $font-family-headings;
 }
 
+a:link:not(.btn) {
+    color: $blue
+}
+
+.btn {
+    display: inline-block;
+    background-color: $white;
+    color: $dark-grey;
+    font-size: 1.6rem;
+    border-radius: .1rem;
+    padding: 1rem 2rem;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+
+    &-round {
+        border-radius: 100rem;
+    }
+}
+
 .masthead {
     display: grid;
     grid-template-columns: auto auto 30rem auto;
@@ -63,7 +83,7 @@ h1, h2 {
                 }
     
                 &-2 {
-                    color: $orange;
+                    color: $blue;
                     animation: moveInLeft .7s ease-out;
                 }
             }
@@ -110,7 +130,7 @@ h1, h2 {
             text-align: center;
         }
     
-        input {
+        &-field {
             display: inline-block;
             width: 100%;
             font-size: 1.6rem;
@@ -118,11 +138,6 @@ h1, h2 {
             margin: 0;
             border: none;
             padding: 1rem;
-        }
-    
-        .button {
-            background-color: $white;
-            color: $dark-grey;
         }
     
         select {
@@ -235,6 +250,12 @@ h1, h2 {
 
         &-text {
             font-size: 1.5rem;
+        }
+
+        &-link:link {
+            font-size: 1.5rem;
+            color: $blue;
+            text-decoration: none;
         }
     }
 }
