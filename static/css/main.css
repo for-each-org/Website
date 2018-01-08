@@ -209,8 +209,7 @@ a:link:not(.btn) {
 
 .footer {
   background-color: #404040;
-  color: #ffffff;
-  text-align: center; }
+  color: #ffffff; }
   .footer-body {
     margin: 0 auto;
     max-width: var(--container-max-width);
@@ -270,5 +269,9 @@ a:link:not(.btn) {
   align-items: center; }
   .footer-body-left, .footer-body-right {
     display: inline-block; }
+  .footer-body-left {
+    text-align: left; }
+  .footer-body-right {
+    text-align: right; }
 
 /*# sourceMappingURL=main.css.map */

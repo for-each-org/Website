@@ -273,7 +273,7 @@ a:link:not(.btn) {
 .footer {
     background-color: $dark-grey;
     color: $white;
-    text-align: center;
+    // text-align: center;
     // margin-top: 50px;
     &-body {
         margin: 0 auto;
@@ -371,5 +371,13 @@ a:link:not(.btn) {
 
     &-left, &-right {
         display: inline-block;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
     }
 }
