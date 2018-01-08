@@ -130,12 +130,14 @@ a:link:not(.btn) {
 
     &-join-us {
         grid-column: 1 / span 4;
+        background-color: $orange;
         color: $white;
-    
+        padding: 20px;
+        
         &-container {
             font-size: 1.4rem;
-            background-color: $orange;
-            padding: 2rem;
+            margin: 0 auto;
+            max-width: 500px;
         }
     
         h2 {
@@ -150,7 +152,7 @@ a:link:not(.btn) {
         }
     
         .mc-field-group {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
     
@@ -322,8 +324,11 @@ a:link:not(.btn) {
             grid-row: 1 / 2;
 
             &-container {
-                margin-right: 2rem;
             }
+        }
+
+        .mc-field-group {
+            margin-bottom: 1rem;
         }
     }
     
