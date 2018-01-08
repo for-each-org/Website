@@ -208,7 +208,9 @@ a:link:not(.btn) {
     background-color: #c13a2c; }
 
 .footer {
-  background-color: #ffffff; }
+  background-color: #404040;
+  color: #ffffff;
+  text-align: center; }
   .footer-body {
     margin: 0 auto;
     max-width: var(--container-max-width);
@@ -260,5 +262,13 @@ a:link:not(.btn) {
       justify-content: flex-end; }
     .cta-right {
       grid-column: 2 / 3; } }
+
+.footer-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .footer-body-left, .footer-body-right {
+    display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

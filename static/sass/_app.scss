@@ -133,7 +133,7 @@ a:link:not(.btn) {
         background-color: $orange;
         color: $white;
         padding: 20px;
-        
+
         &-container {
             font-size: 1.4rem;
             margin: 0 auto;
@@ -271,8 +271,10 @@ a:link:not(.btn) {
 }
 
 .footer {
-    background-color: $white;
-
+    background-color: $dark-grey;
+    color: $white;
+    text-align: center;
+    // margin-top: 50px;
     &-body {
         margin: 0 auto;
         max-width: var(--container-max-width);
@@ -358,5 +360,16 @@ a:link:not(.btn) {
             grid-column: 2 / 3;
             // grid-row: 1 / 2;
         }
+    }
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left, &-right {
+        display: inline-block;
     }
 }
