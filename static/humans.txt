@@ -2,5 +2,5 @@ Hand-crafted with love by ForEach
 
 * * *
 
-@for-each
+https://www.facebook.com/foreachorg
 hello@for-each.org
