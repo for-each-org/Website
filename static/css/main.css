@@ -46,12 +46,12 @@ h1,
 h2 {
   font-family: "Lato", sans-serif; }
 
-a:link:not(.btn),
-a:visited:not(.btn) {
-  color: #2aa2ea;
-  text-decoration: none; }
+a:link,
+a:visited {
+  color: #2aa2ea; }
 
 .btn {
+  color: #404040 !important;
   display: inline-block;
   background-color: #ffffff;
   color: #404040;
@@ -199,8 +199,12 @@ a:visited:not(.btn) {
       .cta-box-text-p {
         font-size: 1.7rem;
         margin-bottom: 1.5rem; }
-    .cta-box-img {
-      height: 25rem; }
+    .cta-box-link {
+      color: #f5f6f8 !important;
+      text-decoration: underline !important;
+      font-weight: 700; }
+      .cta-box-link:hover {
+        color: #2aa2ea !important; }
   .cta-left, .cta-right {
     display: flex;
     align-items: stretch;

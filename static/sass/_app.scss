@@ -22,13 +22,13 @@ h2 {
     font-family: $font-family-headings;
 }
 
-a:link:not(.btn),
-a:visited:not(.btn) {
+a:link,
+a:visited {
     color: $blue;
-    text-decoration: none;
 }
 
 .btn {
+    color: $dark-grey !important;
     display: inline-block;
     background-color: $white;
     color: $dark-grey;
@@ -257,8 +257,14 @@ a:visited:not(.btn) {
             }
         }
 
-        &-img {
-            height: 25rem;
+        &-link {
+            color: $light-grey !important;
+            text-decoration: underline !important;
+            font-weight: 700;
+
+            &:hover {
+                color: $blue !important;
+            }
         }
     }
 
