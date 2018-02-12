@@ -24,7 +24,8 @@ h2 {
 
 a:link:not(.btn),
 a:visited:not(.btn) {
-    color: $blue
+    color: $blue;
+    text-decoration: none;
 }
 
 .btn {
@@ -254,6 +255,10 @@ a:visited:not(.btn) {
                 font-size: 1.7rem;
                 margin-bottom: 1.5rem;
             }
+        }
+
+        &-img {
+            height: 25rem;
         }
     }
 

@@ -48,7 +48,8 @@ h2 {
 
 a:link:not(.btn),
 a:visited:not(.btn) {
-  color: #2aa2ea; }
+  color: #2aa2ea;
+  text-decoration: none; }
 
 .btn {
   display: inline-block;
@@ -198,6 +199,8 @@ a:visited:not(.btn) {
       .cta-box-text-p {
         font-size: 1.7rem;
         margin-bottom: 1.5rem; }
+    .cta-box-img {
+      height: 25rem; }
   .cta-left, .cta-right {
     display: flex;
     align-items: stretch;
