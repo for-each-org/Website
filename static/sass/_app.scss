@@ -119,6 +119,16 @@ a:visited {
                     color: $blue;
                     animation: moveInLeft .7s ease-out;
                 }
+
+                &-3 {
+                    color: $green;
+                    animation: moveInLeft .7s ease-out;
+                }
+                
+                &-4 {
+                    color: $red;
+                    animation: moveInLeft .7s ease-out;
+                }
             }
         }
     }

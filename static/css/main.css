@@ -110,6 +110,12 @@ a:visited {
       .masthead-name-header-sub-2 {
         color: #2aa2ea;
         animation: moveInLeft .7s ease-out; }
+      .masthead-name-header-sub-3 {
+        color: #65c6b9;
+        animation: moveInLeft .7s ease-out; }
+      .masthead-name-header-sub-4 {
+        color: #c13a2c;
+        animation: moveInLeft .7s ease-out; }
   .masthead-ideals {
     grid-column: 1 / span 4;
     padding: 2rem; }
