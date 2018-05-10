@@ -87,13 +87,14 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center; }
     .for-logo-img {
-      width: 90%; }
+      width: 80%; }
   .for-title {
     font-size: 2rem;
-    color: #f5b546;
+    color: #e99605;
     margin-bottom: 20px; }
   .for-text {
     color: #f5f6f8;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    text-align: justify; }
 
 /*# sourceMappingURL=main.css.map */
