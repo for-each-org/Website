@@ -20,7 +20,7 @@ h1, h2, h3 {
     padding: 50px 0;
 
     &-title {
-        font-size: 4.5rem;
+        font-size: 6rem;
         margin: 20px 0;
     }
     &-subtitle {
@@ -29,3 +29,58 @@ h1, h2, h3 {
         max-width: 600px;
     }
 }
+
+.for {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+    background: rgba(28, 96, 131, 1);
+
+    width: 100%;
+    padding: 50px 0;
+    &-students {
+        grid-column: 2 / span 4;
+    }
+
+    &-nonprofits {
+        grid-column: 8 / span 4;
+    }
+
+    &-separator {
+        grid-column: 6 / span 2;
+        grid-row: 1;
+        height: 100%;
+        padding: 20px 0;
+        &-line {
+            width: 2px;
+            background: $light-grey;
+            height: 100%;
+            margin: 0 auto;
+        }        
+    }
+
+    &-logo {
+        grid-column: 6 / span 2;
+        grid-row: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+            width: 90%;
+        }
+    }
+
+    &-title {
+        font-size: 2rem;
+        color: rgba(245, 181, 70, 1);
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        color: $light-grey;
+        font-size: 1.1rem;
+    }
+}
+

@@ -52,11 +52,48 @@ h1, h2, h3 {
   text-align: center;
   padding: 50px 0; }
   .masthead-title {
-    font-size: 4.5rem;
+    font-size: 6rem;
     margin: 20px 0; }
   .masthead-subtitle {
     font-size: 1.5rem;
     margin: 0 auto;
     max-width: 600px; }
+
+.for {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: #1c6083;
+  width: 100%;
+  padding: 50px 0; }
+  .for-students {
+    grid-column: 2 / span 4; }
+  .for-nonprofits {
+    grid-column: 8 / span 4; }
+  .for-separator {
+    grid-column: 6 / span 2;
+    grid-row: 1;
+    height: 100%;
+    padding: 20px 0; }
+    .for-separator-line {
+      width: 2px;
+      background: #f5f6f8;
+      height: 100%;
+      margin: 0 auto; }
+  .for-logo {
+    grid-column: 6 / span 2;
+    grid-row: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .for-logo-img {
+      width: 90%; }
+  .for-title {
+    font-size: 2rem;
+    color: #f5b546;
+    margin-bottom: 20px; }
+  .for-text {
+    color: #f5f6f8;
+    font-size: 1.1rem; }
 
 /*# sourceMappingURL=main.css.map */
