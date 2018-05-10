@@ -73,7 +73,9 @@ h1, h2, h3 {
   grid-template-rows: 1fr auto 1fr;
   min-height: 100vh;
   justify-content: center;
-  background: #1c6083;
+  background: url("../assets/playstation-pattern.png");
+  background-color: #1c6083;
+  background-blend-mode: color-burn;
   width: 100%;
   padding: 50px 0; }
   .for-students {
@@ -85,23 +87,30 @@ h1, h2, h3 {
   .for-separator {
     grid-column: 6 / span 2;
     grid-row: 1 / span 3;
-    height: 100%; }
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px; }
     .for-separator-line {
       width: 2px;
       background: #f5f6f8;
       height: 100%;
       margin: 0 auto; }
-  .for-logo {
-    grid-column: 6 / span 2;
-    grid-row: 2;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .for-logo-img {
-      padding: 5px;
+      .for-separator-line-1 {
+        grid-row: 1;
+        grid-column: 1 / span 5; }
+      .for-separator-line-2 {
+        grid-row: 3;
+        grid-column: 1 / span 5; }
+    .for-separator-logo {
+      grid-row: 2;
+      grid-column: 1 / span 5;
       width: 80%;
-      background: #1c6083; }
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .for-title {
     font-size: 2rem;
     color: #e99605;
@@ -116,30 +125,33 @@ h1, h2, h3 {
     text-align-last: center; }
   @media (max-width: 800px) {
     .for {
-      grid-template-rows: auto auto auto; }
+      grid-template-rows: auto auto auto;
+      align-items: center; }
       .for-students {
         grid-column: 2 / span 10;
         grid-row: 1; }
       .for-nonprofits {
         grid-column: 2 / span 10;
         grid-row: 3; }
-      .for-logo {
-        grid-column: 1 / span 12;
-        grid-row: 2;
-        padding: 20px 0; }
-        .for-logo-img {
-          width: 25%;
-          min-width: 130px; }
       .for-separator {
         grid-column: 2 / span 10;
         grid-row: 2;
         width: 100%;
-        display: flex;
         justify-content: center;
         align-items: center; }
         .for-separator-line {
           width: 100%;
           background: #f5f6f8;
-          height: 2px; } }
+          height: 2px; }
+          .for-separator-line-1 {
+            grid-column: 1 / span 2;
+            grid-row: 2; }
+          .for-separator-line-2 {
+            grid-column: 4 / span 2;
+            grid-row: 2; }
+        .for-separator-logo {
+          grid-column: 3;
+          grid-row: 2;
+          min-width: 130px; } }
 
 /*# sourceMappingURL=main.css.map */
