@@ -7,10 +7,21 @@
 }
 
 html {
-    font-size: 62.5%; // 1rem = 10px;
+    font-size: 12px; // 1rem = 10px;
 }
 
 body {
     box-sizing: border-box;
 }
 
+@media (min-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1020px) {
+    html {
+        font-size: 16px;
+    }
+}
