@@ -50,6 +50,9 @@ h1, h2, h3 {
 .masthead {
   color: #222222;
   text-align: center;
+  background: url("../assets/memphis-colorful.png");
+  background-color: rgba(233, 150, 5, 0.9);
+  background-blend-mode: multiply;
   min-height: 100vh;
   padding: 20vh 10px 0;
   display: flex;
