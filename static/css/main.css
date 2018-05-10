@@ -11,11 +11,11 @@ html {
 body {
   box-sizing: border-box; }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   html {
     font-size: 14px; } }
 
-@media (min-width: 1020px) {
+@media (min-width: 900px) {
   html {
     font-size: 16px; } }
 
@@ -77,8 +77,7 @@ h1, h2, h3 {
   .for-separator {
     grid-column: 6 / span 2;
     grid-row: 1;
-    height: 100%;
-    padding: 20px 0; }
+    height: 100%; }
     .for-separator-line {
       width: 2px;
       background: #f5f6f8;
@@ -92,7 +91,9 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center; }
     .for-logo-img {
-      width: 80%; }
+      padding: 5px;
+      width: 80%;
+      background: #1c6083; }
   .for-title {
     font-size: 2rem;
     color: #e99605;
@@ -101,5 +102,32 @@ h1, h2, h3 {
     color: #f5f6f8;
     font-size: 1.1rem;
     text-align: justify; }
+  @media (max-width: 800px) {
+    .for {
+      grid-template-rows: auto auto auto; }
+      .for-students {
+        grid-column: 2 / span 10;
+        grid-row: 1; }
+      .for-nonprofits {
+        grid-column: 2 / span 10;
+        grid-row: 3; }
+      .for-logo {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+        padding: 20px 0; }
+        .for-logo-img {
+          width: 25%;
+          min-width: 130px; }
+      .for-separator {
+        grid-column: 2 / span 10;
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .for-separator-line {
+          width: 100%;
+          background: #f5f6f8;
+          height: 2px; } }
 
 /*# sourceMappingURL=main.css.map */
