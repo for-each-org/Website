@@ -161,6 +161,10 @@ h1, h2, h3 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px; }
+  .newsletter-container {
+    background: url("../assets/playstation-pattern.png");
+    background-color: #eee;
+    background-blend-mode: multiply; }
   .newsletter-form {
     grid-column: 13 / span 10;
     grid-row: 1 / span 3;
