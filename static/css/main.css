@@ -196,11 +196,26 @@ h1, h2, h3 {
     background: #901d1d;
     padding: 20px 30px;
     color: #f5f6f8;
-    z-index: 2; }
+    z-index: 2;
+    font-size: 1.1rem; }
   .newsletter-form-bg {
     grid-column: 12 / span 12;
     grid-row: 1 / span 3;
     background: #222222;
     z-index: 0; }
+  @media (max-width: 800px) {
+    .newsletter {
+      background: #901d1d; }
+      .newsletter-form {
+        grid-column: 5 / span 16;
+        grid-row: 1 / span 2; }
+      .newsletter-desc {
+        padding: 20px 0;
+        text-align: justify;
+        grid-column: 4 / span 18;
+        grid-row: 3 / span 2; }
+      .newsletter-form-bg {
+        grid-column: 4 / span 18;
+        grid-row: 1 / span 2; } }
 
 /*# sourceMappingURL=main.css.map */

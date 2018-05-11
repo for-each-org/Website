@@ -229,6 +229,8 @@ h1, h2, h3 {
         
         color: $light-grey;
         z-index: 2;
+
+        font-size: 1.1rem;
     }
     
     &-form-bg {
@@ -236,6 +238,26 @@ h1, h2, h3 {
         grid-row: 1 / span 3;
         background: $dark-grey;
         z-index: 0;
+    }
+
+    @media (max-width: 800px) {
+        background: $red;
+        &-form {
+            grid-column: 5 / span 16;
+            grid-row: 1 / span 2;
+        }
+
+        &-desc {
+            padding: 20px 0;
+            text-align: justify;
+            grid-column: 4 / span 18;
+            grid-row: 3 / span 2;
+        }
+
+        &-form-bg {
+            grid-column: 4 / span 18;
+            grid-row: 1 / span 2;
+        }
     }
 }
 
