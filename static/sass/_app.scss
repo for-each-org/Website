@@ -223,6 +223,11 @@ h1, h2, h3 {
             padding: 5px 0;
         }
         
+        &-title {
+            margin: 10px 0;
+            font-size: 2rem;
+        }
+
         z-index: 1;
     }
     
@@ -237,17 +242,33 @@ h1, h2, h3 {
         z-index: 2;
 
         font-size: 1.1rem;
+
+        position: relative;
+
+        &:before {
+            //shadow needs to be separated from the element so that it can
+            //be put on a different 'level', and not overlap with the form
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            box-shadow: 0px 0px 10px 3px #222;
+        }
     }
+
     
     &-form-bg {
         grid-column: 12 / span 12;
         grid-row: 1 / span 3;
         background: $dark-grey;
         z-index: 0;
+        box-shadow: 0px 0px 10px 3px #222;
     }
 
     @media (max-width: 800px) {
-        background-image: url('../assets/playstation-pattern.png');
         background-color: $red;
         background-blend-mode: color-burn;
         &-form {
@@ -261,6 +282,10 @@ h1, h2, h3 {
             grid-column: 3 / span 20;
             grid-row: 3 / span 2;
             background: transparent;
+
+            &:before {
+                display: none;
+            }
         }
 
         &-form-bg {

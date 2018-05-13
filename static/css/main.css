@@ -194,6 +194,9 @@ h1, h2, h3 {
         color: #222222; }
     .newsletter-form-group {
       padding: 5px 0; }
+    .newsletter-form-title {
+      margin: 10px 0;
+      font-size: 2rem; }
   .newsletter-desc {
     grid-column: 3 / span 10;
     grid-row: 3 / span 2;
@@ -201,15 +204,25 @@ h1, h2, h3 {
     padding: 20px 30px;
     color: #f5f6f8;
     z-index: 2;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    position: relative; }
+    .newsletter-desc:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      box-shadow: 0px 0px 10px 3px #222; }
   .newsletter-form-bg {
     grid-column: 12 / span 12;
     grid-row: 1 / span 3;
     background: #222222;
-    z-index: 0; }
+    z-index: 0;
+    box-shadow: 0px 0px 10px 3px #222; }
   @media (max-width: 800px) {
     .newsletter {
-      background-image: url("../assets/playstation-pattern.png");
       background-color: #901d1d;
       background-blend-mode: color-burn; }
       .newsletter-form {
@@ -221,6 +234,8 @@ h1, h2, h3 {
         grid-column: 3 / span 20;
         grid-row: 3 / span 2;
         background: transparent; }
+        .newsletter-desc:before {
+          display: none; }
       .newsletter-form-bg {
         grid-column: 3 / span 20;
         grid-row: 1 / span 2; } }
