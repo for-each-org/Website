@@ -1,5 +1,5 @@
 (function() {
-    var sayings = ['Cause.', 'Action.', 'Idea.'];
+    var sayings = ['Cause.', 'Action.', 'Idea.', 'Movement.', 'Initiative.'];
 
     var i = 1;  
     var header = document.getElementById("animated-sub");
