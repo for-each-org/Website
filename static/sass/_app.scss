@@ -299,6 +299,88 @@ h1, h2, h3 {
     }
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-rows: auto auto 20px;
+    
+    margin: 0 auto;
+
+    &-desc {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 3;
+        padding: 50px 40px;
+
+        background: url('../assets/playstation-pattern.png');
+        background-color: $blue;
+        background-blend-mode: color-burn;
+
+        color: $light;
+        font-size: 1.2rem;
+    }
+
+    &-info {
+        grid-column: 13 / span 12;
+        grid-row: 1 / span 3;
+        padding: 20px 30px;
+
+
+        background: url('../assets/playstation-pattern.png');
+        background-color: $orange;
+        background-blend-mode: multiply;
+
+        color: $dark-grey;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        width: 100%;
+
+        p {
+            font-size: 1.3rem;
+            margin: 5px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: $primary;
+
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: $secondary;
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        &-desc {
+            grid-column: 1 / span 24;
+            grid-row: 1 / span 1;
+            padding: 20px 30px;
+        }
+        &-info {
+            grid-column: 1 / span 24;
+            grid-row: 2 / span 2;
+            padding: 20px 30px;
+
+            background-color: $blue;
+            background-blend-mode: color-burn;
+
+            color: $orange;
+
+            .link {
+                color: $light;
+                &:active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
 .footer {
     display: grid;
     grid-template-columns: 1fr 100px 1fr;
