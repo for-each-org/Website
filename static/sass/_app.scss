@@ -10,401 +10,438 @@ body {
     background-color: $light-grey;
 }
 
-main {
-    margin: 0 auto;
-    width: 100vw;
-    min-height: 100vh;
-    max-width: var(--container-max-width);
-}
-
-h1, 
-h2 {
+h1, h2, h3 {
     font-family: $font-family-headings;
 }
 
-a:link,
-a:visited {
-    color: $blue;
-}
-
-.btn {
-    color: $dark-grey !important;
-    display: inline-block;
-    background-color: $white;
-    color: $dark-grey;
-    font-size: 1.6rem;
-
-    border: 2px solid $white;
-    border-radius: .1rem;
-
-    padding: 1rem 2rem;
-    margin: 0;
-
-    text-decoration: none;
-
-    &-round {
-        border-radius: 100rem;
-    }
-
-    &:hover, 
-    &:focus {
-        background: $dark-grey;
-        border-color: $dark-grey;
-        color: $white;
-
-        transition: all 0.2s ease-in;
-    }
-
-    &:active {
-        border-color: $white;
-    }
-}
-
 .masthead {
-    display: grid;
-    grid-template-columns: auto auto 30rem auto;
-
-    &-name {
-        padding: 2rem 2rem 0;
-        grid-column: 1 / span 4;
-        max-width: 50rem;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-
-        &-logo {
-            height: 7rem;
-            display: block;
-            margin-bottom: 2rem;
-            padding: 10px 20px;
-            background: $dark-grey;
-            border-radius: 5px;
-
-            &-img {
-                width: auto;
-                height: 100%;
-            }
-        }
+    color: $dark-grey;
+    text-align: center;
     
-        &-header {
-
-            &-name, 
-            &-sub {
-                display: block;
-                font-size: 9rem;
-                font-weight: 900;
-                line-height: 1.1;
-            }
+    background: url('../assets/memphis-colorful.png'), radial-gradient(circle, rgba(233, 150, 5, 1), rgba(199, 129, 6, 1));
+    background-blend-mode: multiply;
     
-            &-name {
-                color: $dark-grey;
-            }
+    min-height: 100vh;
+    padding: 20vh 10px 0;
     
-            &-sub {
-                color: $green;
-
-                &-0 {
-                    color: $green;
-                    animation: moveInLeft .7s ease-out;
-                }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     
-                &-1 {
-                    color: $red;
-                    animation: moveInLeft .7s ease-out;
-                }
-    
-                &-2 {
-                    color: $blue;
-                    animation: moveInLeft .7s ease-out;
-                }
-
-                &-3 {
-                    color: $green;
-                    animation: moveInLeft .7s ease-out;
-                }
-                
-                &-4 {
-                    color: $red;
-                    animation: moveInLeft .7s ease-out;
-                }
-            }
-        }
+    &-title {
+        font-size: 6rem;
+        margin: 20px 0;
     }
-
-    &-ideals {
-        grid-column: 1 / span 4;
-        padding: 2rem;
-    
-        &-text {
-            font-weight: 400;
-            font-size: 2rem;
-        }
+    &-subtitle {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        max-width: 600px;
     }
-
-    &-join-us {
-        grid-column: 1 / span 4;
-        background-color: $orange;
-        color: $white;
-        padding: 20px;
-
-        &-container {
-            font-size: 1.4rem;
-            margin: 0 auto;
-            max-width: 500px;
-        }
-    
-        h2 {
-            font-size: 3rem;
-            // margin: 0 auto;
-            margin-bottom: .7rem;
-            text-align: center;
-        }
-    
-        p {
-            margin-bottom: .7rem;
-        }
-    
-        .mc-field-group {
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-    
-        .clear {
-            text-align: center;
-        }
-    
-        &-field {
-            display: inline-block;
-            width: 100%;
-            font-size: 1.6rem;
-            border-radius: .1rem;
-            margin: 0;
-            border: none;
-            padding: 1rem;
-        }
-    
-        select {
-            font-size: 1.6rem;
-            width: 100%;
-            font-size: 1.6rem;
-        }
-    }
-}
-
-//temporary to show grid
-.fill {
-    background: $dark-grey;
-    margin: 10px;
-    height: 300px;
-    display: inline-block;
 }
 
 .for {
-    display: flex;
-    justify-content: stretch;
-    flex-direction: column;
-    margin-bottom: 2rem;
-
-    &-item {
-        align-self: stretch;
-        margin: 0.5rem;
-        background: $white;
-        padding: 2rem 2rem;
-        border-radius: 3px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
-    
-        &-heading {
-            font-size: 3rem;
-            margin-bottom: .7rem;
-        }
-    
-        &-text {
-            font-size: 1.7rem;
-        }
-
-        &-sub {
-            color: $green;
-        }
-    }
-}
-
-.important {
-    padding: 2rem;
-
-    &-heading {
-        font-size: 3rem;
-        margin-bottom: .7rem;
-    }
-
-    &-text {
-        font-size: 1.7rem;
-        margin-bottom: 1.5rem;
-    }
-}
-
-.cta {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    width: 100vw;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto 1fr;
+    min-height: 105vh;
     
-    &-box {
-        color: $white;
-
-        &-text {
-            padding: 2rem;
-
-            &-h2 {
-                font-size: 3rem;
-                margin-bottom: 1rem;
+    justify-content: center;
+    
+    background: url('../assets/playstation-pattern.png'), linear-gradient(to bottom right, rgba(24, 82, 112, 1), rgba(28, 96, 131, 1));;
+    background-blend-mode: color-burn;
+    
+    width: 100%;
+    padding: 50px 0;
+    &-students {
+        grid-column: 2 / span 4;
+        grid-row: 2 ;
+    }
+    
+    &-nonprofits {
+        grid-column: 8 / span 4;
+        grid-row: 2;
+    }
+    
+    &-separator {
+        grid-column: 6 / span 2;
+        grid-row: 1 / span 3;
+        height: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        
+        &-line {
+            width: 2px;
+            background: $light-grey;
+            height: 100%;
+            margin: 0 auto;
+            
+            &-1 {
+                grid-row: 1;
+                grid-column: 1 / span 5;
             }
-
-            &-p {
-                font-size: 1.7rem;
-                margin-bottom: 1.5rem;
+            
+            &-2 {
+                grid-row: 3;
+                grid-column: 1 / span 5;
             }
+        }   
+        
+        &-logo {
+            grid-row: 2;
+            grid-column: 1 / span 5;
+            
+            width: 80%;
+            margin: 0 auto;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+    }
+    
+    &-title {
+        font-size: 2rem;
+        color: $orange;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    &-text {
+        color: $light-grey;
+        font-size: 1.1rem;
+        text-align: justify;
+        margin: 0 auto;
+        -moz-text-align-last: center;
+        text-align-last: center;
+    }
+    
+    @media (max-width: 800px) {
+        grid-template-rows: auto auto auto; 
+        align-items: center;
+        
+        &-students {
+            grid-column: 2 / span 10;
+            grid-row: 1;
+        }
+        
+        &-nonprofits {
+            grid-column: 2 / span 10;
+            grid-row: 3
+        }
+        
+        &-separator {
+            grid-column: 2 / span 10;
+            grid-row: 2;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            &-line {
+                width: 100%;
+                background: $light-grey;
+                height: 2px;
 
-        &-link {
-            color: $light-grey !important;
-            text-decoration: underline !important;
-            font-weight: 700;
-
-            &:hover {
-                color: $blue !important;
+                &-1 {
+                    grid-column: 1 / span 2;
+                    grid-row: 2;
+                }
+                &-2 {
+                    grid-column: 4 / span 2;
+                    grid-row: 2;
+                }
+            } 
+            
+            &-logo {
+                grid-column: 3;
+                grid-row: 2;
+                min-width: 130px;
             }
         }
     }
+}
 
-    &-left, 
-    &-right {
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-rows: auto auto auto 20px;
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+
+    &-container {
+        background: url('../assets/playstation-pattern.png');
+        background-color: $light;
+        background-blend-mode: multiply;
+    }
+    
+    &-form {
+        grid-column: 13 / span 10;
+        grid-row: 1 / span 3;
+        padding: 40px 10px;
+        
+        color: $light;
+        
+        &-field {
+            width: 100%;
+            height: 40px;
+            background: #555;
+            border: none;
+            padding: 5px;
+            color: $light;
+            font-size: 1rem;
+            &:focus {
+                background: $red;
+            }
+            
+            transition: all 0.2s ease-in;
+        }
+        
+        &-btn {
+            background: $light;
+            color: $dark-grey;
+            cursor: pointer;
+            
+            &:hover, &:focus {
+                background: $red;
+                color: $light;
+            }
+            
+            &:active {
+                background: $orange;
+                color: $dark-grey;
+            }
+        }
+        
+        &-group {
+            padding: 5px 0;
+        }
+        
+        &-title {
+            margin: 10px 0;
+            font-size: 2rem;
+        }
+
+        z-index: 1;
+    }
+    
+    &-desc {
+        grid-column: 3 / span 10;
+        grid-row: 3 / span 2;
+        
+        background: $red;
+        padding: 20px 30px;
+        
+        color: $light-grey;
+        z-index: 2;
+
+        font-size: 1.1rem;
+
+        position: relative;
+
+        &:before {
+            //shadow needs to be separated from the element so that it can
+            //be put on a different 'level', and not overlap with the form
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            box-shadow: 0px 0px 10px 3px #222;
+        }
+    }
+
+    
+    &-form-bg {
+        grid-column: 12 / span 12;
+        grid-row: 1 / span 3;
+        background: $dark-grey;
+        z-index: 0;
+        box-shadow: 0px 0px 10px 3px #222;
+    }
+
+    @media (max-width: 800px) {
+        &-container{
+            background-color: $red;
+            background-blend-mode: color-burn;
+        }
+
+        &-form {
+            grid-column: 4 / span 18;
+            grid-row: 1 / span 2;
+        }
+
+        &-desc {
+            padding: 20px 0;
+            text-align: justify;
+            grid-column: 3 / span 20;
+            grid-row: 3 / span 2;
+            background: transparent;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &-form-bg {
+            grid-column: 3 / span 20;
+            grid-row: 1 / span 2;
+        }
+    }
+
+    @media (max-width: 500px) {
+        padding: 50px 0;
+    }
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-rows: auto auto 20px;
+    
+    margin: 0 auto;
+
+    &-desc {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 3;
+        padding: 50px 40px;
+
+        background: url('../assets/playstation-pattern.png');
+        background-color: $blue;
+        background-blend-mode: color-burn;
+
+        color: $light;
+        font-size: 1.2rem;
+    }
+
+    &-info {
+        grid-column: 13 / span 12;
+        grid-row: 1 / span 3;
+        padding: 20px 30px;
+
+
+        background: url('../assets/playstation-pattern.png');
+        background-color: $orange;
+        background-blend-mode: multiply;
+
+        color: $dark-grey;
+
         display: flex;
-        align-items: stretch;
-        justify-content: flex-start;
-    }
+        justify-content: center;
+        flex-direction: column;
+        
+        width: 100%;
 
-    &-left {
-        grid-column: 1 / span 2;
-        background-color: $green;
-    }
+        p {
+            font-size: 1.3rem;
+            margin: 5px;
+        }
 
-    &-right {
-        grid-column: 1 / span 2;
-        background-color: $red;
+        .link {
+            text-decoration: none;
+            color: $primary;
+
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: $secondary;
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        &-desc {
+            grid-column: 1 / span 24;
+            grid-row: 1 / span 1;
+            padding: 20px 30px;
+        }
+        &-info {
+            grid-column: 1 / span 24;
+            grid-row: 2 / span 2;
+            padding: 20px 30px;
+
+            background-color: $blue;
+            background-blend-mode: color-burn;
+
+            color: $orange;
+
+            .link {
+                color: $light;
+                &:active {
+                    color: $primary;
+                }
+            }
+        }
     }
 }
 
 .footer {
-    background-color: $dark-grey;
-    color: $white;
-    // text-align: center;
-    // margin-top: 50px;
-    &-body {
-        margin: 0 auto;
-        max-width: var(--container-max-width);
-        padding: 2rem;
-
-        &-text {
-            font-size: 1.5rem;
-        }
-
-        &-link:link {
-            font-size: 1.5rem;
-            color: $blue;
-            text-decoration: none;
-        }
-    }
-}
-
-.btn-social {
-    display: inline-block;
-    font-size: 3rem;
-    background-color: #3B5998;
-    color: $white;
-    height: 4rem;
-    // width: 4rem; 
-    text-align: center;
-    border-radius: .3rem;
-    margin-right: 3rem;
-    padding: 0 .6rem;
-    text-decoration: none;
-}
-
-@media #{$tablet} {
-
-    .masthead {
-        grid-template-rows: auto auto;
-
-        &-name {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-
-        &-ideals {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        &-join-us {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-
-            &-container {
-            }
-        }
-
-        .mc-field-group {
-            margin-bottom: 1rem;
-        }
-    }
-    
-    .for {
-        flex-direction: row;
-        justify-content: center;
-
-        &-item {
-            width: 35rem;
-        }
-    }
-
-    .cta {
-        // grid-template-rows: auto;
-        margin-left: calc(-100vw / 2 + var(--container-max-width) / 2);
-        
-        &-box-text {
-            max-width: calc(var(--container-max-width) / 2);
-        }
-
-        &-left {
-            grid-column: 1 / 2;
-            // grid-row: 1 / 2;
-            justify-content: flex-end;
-        }
-        &-right {
-            grid-column: 2 / 3;
-            // grid-row: 1 / 2;
-        }
-    }
-}
-
-.footer-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
     align-items: center;
+    
+    padding: 20px 20px;
 
-    &-left, 
-    &-right {
-        display: inline-block;
+    color: $light;
+    background: $dark-grey;
+
+    font-size: 0.9rem;
+
+    &-c {
+        grid-column: 1;
+        grid-row: 1 / span 3;
     }
 
-    &-left {
-        text-align: left;
+    &-img {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        width: 100%;
     }
 
-    &-right {
+    &-links {
+        grid-column: 3;
+        grid-row: 1 / span 3;
         text-align: right;
+
+        * {
+            margin: 0 5px;
+        }
+
+        &-img {
+            width: 32px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        * {
+            margin: 10px 0;
+        }
+
+        font-size: 1.1rem;
+
+        &-c {
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            text-align: center;
+        }
+
+        &-img {
+            grid-row: 1;
+        }
+
+        &-links {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+            text-align: center;
+
+        }
     }
 }
