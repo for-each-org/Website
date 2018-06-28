@@ -38,6 +38,17 @@ h1, h2, h3 {
         margin: 0 auto;
         max-width: 600px;
     }
+
+    .cta-btn {
+        background-color: $blue;
+        border: none; 
+        border-radius: 5px;
+        color: $white;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 18px;
+        
+    }
 }
 
 .for {
